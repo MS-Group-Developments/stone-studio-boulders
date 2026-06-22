@@ -9,7 +9,11 @@
   <link rel="canonical" href="https://boulders.thestonestudio.co/">
   <meta property="og:title" content="Stone Studio Boulders — Natural landscape stone and boulders">
   <meta property="og:description" content="Hand-selected natural boulders and landscape stone for garden designers and landscape architects. Boulder water features, specimen stones and placement service across the UK.">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"></noscript>
   <style>
     :root{--bg:#F6F3EE;--bg-s:#EAE7E1;--fg:#191713;--mid:#7D7267;--rule:#D4CFCA;--stone:#8C7C6A}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -44,7 +48,7 @@
 
     /* logo — white filter when transparent, original when scrolled */
     .nav-logo{display:block;line-height:0}
-    .nav-logo svg{width:477px;height:auto;transition:filter 0.2s}
+    .nav-logo svg{width:429px;height:auto;transition:filter 0.2s}
     nav:not(.sc) .nav-logo{filter:brightness(0) invert(1)}
 
     /* nav links — absolutely centred */
@@ -64,7 +68,7 @@
 
     /* nav CTA — white when transparent */
     .nav-cta{
-      font-size:0.62rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;
+      font-size:0.62rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
       color:rgba(255,255,255,0.9);
       border-bottom:1px solid rgba(255,255,255,0.7);
       padding-bottom:2px;transition:color 0.2s,border-color 0.2s,opacity 0.2s;
@@ -74,13 +78,20 @@
 
     /* back button — white when transparent */
     .nav-back{
-      font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;
+      font-size:0.58rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;
       border:1px solid rgba(255,255,255,0.4);padding:8px 16px;
       color:rgba(255,255,255,0.8);
       transition:border-color 0.2s,color 0.2s,opacity 0.2s;
     }
     nav.sc .nav-back{border-color:var(--rule);color:var(--mid)}
     .nav-back:hover{opacity:0.65}
+
+    /* text-shadow on white nav elements for contrast over video */
+    nav:not(.sc) .nav-links a,
+    nav:not(.sc) .nav-back,
+    nav:not(.sc) .nav-cta{
+      text-shadow:0 1px 3px rgba(0,0,0,0.55);
+    }
 
     /* ── VIDEO HERO ───────────────────────────────────── */
     .hero-video{position:relative;height:100vh;overflow:hidden}
@@ -90,7 +101,7 @@
     }
     .hero-overlay{
       position:absolute;inset:0;
-      background:linear-gradient(180deg,rgba(0,0,0,0.08) 0%,rgba(0,0,0,0.42) 100%);
+      background:linear-gradient(180deg,rgba(0,0,0,0.38) 0%,rgba(0,0,0,0.16) 28%,rgba(0,0,0,0.44) 100%);
       display:flex;flex-direction:column;
       align-items:center;justify-content:center;
       text-align:center;
@@ -161,8 +172,8 @@
   </style>
 </head>
 <body>
-  <nav id="nav">
-    <a href="/" class="nav-logo"><svg viewBox="0 0 456 101">
+  <nav id="nav" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="Stone Studio Boulders home"><svg viewBox="0 0 456 101">
   <defs>
     <style>
       .cls-1 {
@@ -217,7 +228,7 @@
   </nav>
 
   <div class="hero-video">
-    <video autoplay loop muted playsinline>
+    <video autoplay loop muted playsinline preload="none" poster="4.jpg">
       <source src="header.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay">
@@ -225,13 +236,6 @@
       <h1><span style="font-weight:700">Stone,</span> as nature left it.</h1>
       <p>Hand-selected boulders and natural stone for landscape, water and gardens.</p>
     </div>
-  </div>
-
-  <div class="photo-strip" aria-hidden="true" style="grid-template-columns:repeat(4,1fr)">
-    <img src="4.jpg" alt="" loading="lazy">
-    <img src="13.jpg" alt="" loading="lazy">
-    <img src="14.jpg" alt="" loading="lazy">
-    <img src="20.jpg" alt="" loading="lazy">
   </div>
 
   <section class="bt" id="work">
@@ -248,6 +252,13 @@
       </div>
     </div>
   </section>
+
+  <div class="photo-strip" aria-hidden="true" style="grid-template-columns:repeat(4,1fr)">
+    <img src="4.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+    <img src="13.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+    <img src="14.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+    <img src="20.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+  </div>
 
   <section class="bg-s bt" id="services">
     <div class="c">
