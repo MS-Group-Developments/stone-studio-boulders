@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stone Studio Boulders — Natural landscape stone and boulders</title>
+  <title>Stone Studio Boulders â Natural landscape stone and boulders</title>
   <meta name="description" content="Hand-selected natural boulders and landscape stone for garden designers and landscape architects. Boulder water features, specimen stones and placement service across the UK.">
   <meta name="keywords" content="natural boulders UK, landscape boulders, garden boulders, boulder water features, specimen stones, natural stone placement, landscape stone supply">
   <link rel="canonical" href="https://boulders.thestonestudio.co/">
-  <meta property="og:title" content="Stone Studio Boulders — Natural landscape stone and boulders">
+  <meta property="og:title" content="Stone Studio Boulders â Natural landscape stone and boulders">
   <meta property="og:description" content="Hand-selected natural boulders and landscape stone for garden designers and landscape architects. Boulder water features, specimen stones and placement service across the UK.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
     .c{max-width:1280px;margin:0 auto;padding:0 64px}
     @media(max-width:768px){.c{padding:0 24px}}
 
-    /* ── NAV ─────────────────────────────────────────── */
+    /* ââ NAV âââââââââââââââââââââââââââââââââââââââââââ */
     nav{
       position:fixed;top:0;left:0;right:0;z-index:100;
       padding:18px 64px;
@@ -46,12 +46,12 @@
       border-bottom-color:var(--rule);
     }
 
-    /* logo — white filter when transparent, original when scrolled */
+    /* logo â white filter when transparent, original when scrolled */
     .nav-logo{display:block;line-height:0}
-    .nav-logo svg{width:429px;height:auto;transition:filter 0.2s}
+    .nav-logo svg{width:clamp(180px,38vw,429px);height:auto;transition:filter 0.2s}
     nav:not(.sc) .nav-logo{filter:brightness(0) invert(1)}
 
-    /* nav links — absolutely centred */
+    /* nav links â absolutely centred */
     .nav-links{
       position:absolute;left:50%;transform:translateX(-50%);
       display:flex;gap:32px;list-style:none;
@@ -66,7 +66,7 @@
     .nav-links a:hover{opacity:0.7}
     nav.sc .nav-links a:hover{color:var(--fg);opacity:1}
 
-    /* nav CTA — white when transparent */
+    /* nav CTA â white when transparent */
     .nav-cta{
       font-size:0.62rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
       color:rgba(255,255,255,0.9);
@@ -76,7 +76,7 @@
     nav.sc .nav-cta{color:var(--fg);border-bottom-color:var(--fg)}
     .nav-cta:hover{opacity:0.55}
 
-    /* back button — white when transparent */
+    /* back button â white when transparent */
     .nav-back{
       font-size:0.58rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;
       border:1px solid rgba(255,255,255,0.4);padding:8px 16px;
@@ -85,6 +85,7 @@
     }
     nav.sc .nav-back{border-color:var(--rule);color:var(--mid)}
     .nav-back:hover{opacity:0.65}
+    @media(max-width:520px){.nav-back{display:none}}
 
     /* text-shadow on white nav elements for contrast over video */
     nav:not(.sc) .nav-links a,
@@ -93,7 +94,7 @@
       text-shadow:0 1px 3px rgba(0,0,0,0.55);
     }
 
-    /* ── VIDEO HERO ───────────────────────────────────── */
+    /* ââ VIDEO HERO âââââââââââââââââââââââââââââââââââââ */
     .hero-video{position:relative;height:100vh;overflow:hidden}
     .hero-video video{
       position:absolute;top:0;left:0;
@@ -118,7 +119,7 @@
       font-size:1.05rem;max-width:420px;margin-top:20px;line-height:1.7;
     }
 
-    /* ── REST OF PAGE ─────────────────────────────────── */
+    /* ââ REST OF PAGE âââââââââââââââââââââââââââââââââââ */
     .photo-strip{display:grid;gap:3px;background:var(--bg-s)}
     .photo-strip img{width:100%;aspect-ratio:1;object-fit:cover;display:block;filter:brightness(0.97)}
     section{padding:104px 0}
@@ -145,7 +146,9 @@
     .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);margin-top:56px}
     @media(max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:580px){.svc-grid{grid-template-columns:1fr}}
-    .svc{background:var(--bg-s);padding:36px 28px}
+    .svc{background:var(--bg-s);overflow:hidden}
+    .svc img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+    .svc-body{padding:24px 28px 28px}
     .svc h3{margin-bottom:8px}
     .svc p{font-size:0.82rem;line-height:1.72}
     .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);margin-top:56px}
@@ -253,11 +256,11 @@
     </div>
   </section>
 
-  <div class="photo-strip" aria-hidden="true" style="grid-template-columns:repeat(4,1fr)">
-    <img src="4.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
-    <img src="13.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
-    <img src="14.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
-    <img src="20.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+  <div class="photo-strip" style="grid-template-columns:repeat(4,1fr)">
+    <img src="4.jpg" alt="Natural boulder specimen hand-selected for landscape garden design" width="800" height="800" loading="lazy" decoding="async">
+    <img src="13.jpg" alt="Large natural stone boulder placed in an outdoor landscape setting" width="800" height="800" loading="lazy" decoding="async">
+    <img src="14.jpg" alt="Hand-picked natural boulders sourced by Stone Studio for UK garden projects" width="800" height="800" loading="lazy" decoding="async">
+    <img src="20.jpg" alt="Specimen stone with natural patina and character for feature landscaping" width="800" height="800" loading="lazy" decoding="async">
   </div>
 
   <section class="bg-s bt" id="services">
@@ -265,12 +268,12 @@
       <span class="label">Services</span>
       <h2>What we <span style="font-weight:700">supply</span></h2>
       <div class="svc-grid">
-        <div class="svc"><h3>Specimen boulders</h3><p>Single feature stones selected for character, shape and patina. Hand-picked, not machine-graded.</p></div>
-        <div class="svc"><h3>Boulder water features</h3><p>Drilled and plumbed for water. From a garden spring stone to a large landscape water feature.</p></div>
-        <div class="svc"><h3>Landscape stone placement</h3><p>We handle delivery and crane or machine placement on site. Anywhere in the UK.</p></div>
-        <div class="svc"><h3>Natural stone seating</h3><p>Boulders and stone slabs as seating for parks, estates and garden projects. Low-maintenance, permanent.</p></div>
-        <div class="svc"><h3>Stepping stones</h3><p>Flat-topped natural stone stepping stones, cut to size or supplied in natural form.</p></div>
-        <div class="svc"><h3>Material palette supply</h3><p>For large landscape projects requiring consistent stone character across a site. We source to match.</p></div>
+        <div class="svc"><img src="svc-specimen.jpg" alt="Specimen boulder — hand-selected natural feature stone with distinctive shape and patina for garden focal points" width="600" height="600" loading="lazy" decoding="async"><div class="svc-body"><h3>Specimen boulders</h3><p>Single feature stones selected for character, shape and patina. Hand-picked, not machine-graded.</p></div></div>
+        <div class="svc"><img src="svc-water.jpg" alt="Boulder water feature — natural stone drilled and plumbed as a garden or landscape water feature" width="600" height="600" loading="lazy" decoding="async"><div class="svc-body"><h3>Boulder water features</h3><p>Drilled and plumbed for water. From a garden spring stone to a large landscape water feature.</p></div></div>
+        <div class="svc"><img src="svc-placement.jpg" alt="Landscape stone placement — crane positioning of large natural boulders on a UK garden or estate site" width="600" height="600" loading="lazy" decoding="async"><div class="svc-body"><h3>Landscape stone placement</h3><p>We handle delivery and crane or machine placement on site. Anywhere in the UK.</p></div></div>
+        <div class="svc"><img src="svc-seating.jpg" alt="Natural stone seating — boulder and stone slab seats for parks, estate gardens and landscape projects" width="600" height="600" loading="lazy" decoding="async"><div class="svc-body"><h3>Natural stone seating</h3><p>Boulders and stone slabs as seating for parks, estates and garden projects. Low-maintenance, permanent.</p></div></div>
+        <div class="svc"><img src="svc-stepping.jpg" alt="Natural stone stepping stones — flat-topped boulders and stone pavers for garden paths and water crossings" width="600" height="600" loading="lazy" decoding="async"><div class="svc-body"><h3>Stepping stones</h3><p>Flat-topped natural stone stepping stones, cut to size or supplied in natural form.</p></div></div>
+        <div class="svc"><img src="svc-palette.jpg" alt="Material palette supply — consistent natural stone character sourced across a large landscape or estate site" width="600" height="600" loading="lazy" decoding="async"><div class="svc-body"><h3>Material palette supply</h3><p>For large landscape projects requiring consistent stone character across a site. We source to match.</p></div></div>
       </div>
     </div>
   </section>
